@@ -1,4 +1,4 @@
-# SOC-Capstone-Team-1
+#<h1 align="center"> SOC-Capstone-Team-1
 Group Capstone project repository for Security Operations Center (SOC) implementation.
 ##
 
