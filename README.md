@@ -3,6 +3,7 @@ Group Capstone project repository for Security Operations Center (SOC) implement
 ##
 Team Lead- Quatecha Cleveland-Webb
 Project Manager - Margaret Edwards
+
 Ivan Castillo
 Justin Vargas
 #
