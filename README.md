@@ -27,5 +27,8 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 
 
 ##
+##
+- - **Resources:**
+##
 Project Deliverables
 Sprint 1-2: Project Planning & Requirements Gathering
