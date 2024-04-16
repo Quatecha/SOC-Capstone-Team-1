@@ -1,6 +1,9 @@
 #<h1 align="center"> SOC-Capstone-Team-1
 Group Capstone project repository for Security Operations Center (SOC) implementation.
 ##
+- **Project**
+https://docs.google.com/document/d/1EZNmVznhNWx1f6MrD1Wel16jqEMmvVfN-b0MNJu0puU/edit
+##
 - **Team Members Role:**
    ##
   
