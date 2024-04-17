@@ -33,8 +33,10 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 ##
 - - **Resources:**
 ##
-Project Deliverables
-Sprint 1-2: Project Planning & Requirements Gathering
+
+##
+- **Sprint 1-2: Project Planning & Requirements Gathering:**
+- https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit
 - - **Tools Being Used**
   - wireshark
   - wazuh
