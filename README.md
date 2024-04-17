@@ -45,6 +45,6 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
   - splunk
 ##
 - **Sprint 1-2 Team Retrospective**
--  ![C:\Users\Wethe\OneDrive\Pictures\Screenshots\Screenshot 2024-04-16 230416.png]([https://github.com/Quatecha/SOC-Capstone-Team-1])
+
 
   
