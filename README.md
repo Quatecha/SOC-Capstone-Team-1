@@ -32,6 +32,8 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 ##
 ##
 - - **Resources:**
+  - https://www.youtube.com/watch?v=RjLM50USrvY
+  - https://www.coursera.org/learn/security-operations-center-soc
 ##
 
 ##
