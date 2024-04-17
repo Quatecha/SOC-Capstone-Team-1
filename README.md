@@ -11,9 +11,9 @@ https://docs.google.com/document/d/1EZNmVznhNWx1f6MrD1Wel16jqEMmvVfN-b0MNJu0puU/
 
      • Margaret Edwards: **Project Manager**
 
-     • Ivan Castillo: 
+     • Ivan Castillo: Technical Documentation 
 
-     • Justin V: 
+     • Justin V: APA 1750 Professional Paper of Project Build
 
   
 ##
