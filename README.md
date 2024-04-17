@@ -38,5 +38,5 @@ Sprint 1-2: Project Planning & Requirements Gathering
 - - **Tools Being Used**
   - wireshark
   - wazuh
-  - snort
+  - splunk
 ##
