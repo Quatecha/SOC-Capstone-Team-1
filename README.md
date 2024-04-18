@@ -30,11 +30,12 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
     • Security Analysts
 
 
-##
-##
+#
+
 - - **Resources:**
   - https://www.youtube.com/watch?v=RjLM50USrvY
   - https://www.coursera.org/learn/security-operations-center-soc
+  - https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_SEC_NextGenSIEM_Whitepaper_Final.pdf?aliId=eyJpIjoiZGJ5SWlNMDVEeUpWU1RVUyIsInQiOiJXRHNUUDFpWklvZVBySHZcLzFzdm9Gdz09In0%253D
 ##
 
 ##
