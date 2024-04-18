@@ -1,5 +1,4 @@
-# Introduction to Security Operations Center
-
+# SOC Analysts
 
 Security Operations Center (SOC) analysts play a vital role in the digital protection of organizations from cyber criminals.
 Their primary role is monitoring and detecting anomalies in the network. They work to respond to and mitigate threats around the clock.
@@ -13,4 +12,24 @@ They need to stay up-to-date with recent security vulnerabilities, exploits and 
 They prevent threats through methods such as gathering intelligence on latest threats, threat actors, and their TTPs:  Tactics, Techniques, and Procedures.
 
 In the case of a confirmed security incident, SOC teams must collaborate with other teams to contain the incident as much as possible. They mitigate the threat as much as possible, so that it causes the least amount of damage to the company’s CIA Triad:  Confidentiality, Integrity, Availability.
+
+## EDR
+
+
+## Alert
+
+
+## Detection Tuning
+
+
+## Quarantine
+
+
+## MSSP Managed Security Service Provider
+
+
+
+## MDR Managed Detection and Response Provider
+
+
 
