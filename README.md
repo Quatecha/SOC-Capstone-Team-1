@@ -45,6 +45,7 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
   - wireshark
   - wazuh
   - splunk
+  - GitHub Projects
 ##
 - **Sprint 1-2 Team Retrospective**
 
