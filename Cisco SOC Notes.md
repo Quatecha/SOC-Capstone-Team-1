@@ -11,16 +11,16 @@ This course aims to helps us:
 #### SOC Defined
 - A SOC is the first line of defense in preventing and responding to IT security breaches.
 - Each member of a SOC team has a specific role with a specific skill set
-  - Tier 1 Analyst: The triage specialist who must determine whether the alert is justified or simply a false positive.
-  - Tier 2 Analyst: The incident handler does an in-depthassessment to understand the scope of the attack and identify the affected systems. 
-  - Tier 3 Analyst: Threat hunter or incident responder is the most experienced member of the SOC operation team.
-  - SOC Manager: Responsible for leading the SOC. The SOC manager supervises, manages, coordinates the team and provides technical guidance when needed.
+  - **Tier 1 Analyst:** The triage specialist who must determine whether the alert is justified or simply a false positive.
+  - **Tier 2 Analyst:** The incident handler does an in-depthassessment to understand the scope of the attack and identify the affected systems. 
+  - **Tier 3 Analyst:** Threat hunter or incident responder is the most experienced member of the SOC operation team.
+  - **SOC Manager:** Responsible for leading the SOC. The SOC manager supervises, manages, coordinates the team and provides technical guidance when needed.
   - Some extended SOC Team members include:
-    - Chief Security Officer or CISO who defines strategies, goals and objectives of the organization's overall security operations
-    - Security Engineer who develops, integrates, and maintains SOC tools, as well as defines requirements for new ones.
+    - **Chief Security Officer or CISO** who defines strategies, goals and objectives of the organization's overall security operations
+    - **Security Engineer** who develops, integrates, and maintains SOC tools, as well as defines requirements for new ones.
 
 #### SOC Environment Today
-- Dwell Time: This is the amount of time the cybercriminals have been inside a network prior to detection.
+- **Dwell Time:** This is the amount of time the cybercriminals have been inside a network prior to detection.
   - Knowing the Dwell time helps to guage how quickly a threats presense is being detected and how long they have had to execute malitious actions.
 - The current average time required for a company to detect intrusion is between 100 and 200 days. This is why drills are performed to provide information on how fast a malicious action is detected by a SOC and how fast the SOC can mitigate.
 - Cyber criminals come primarily from organized crime. They can also be state affiliated, employees, or even unskilled hackers using tools they obtained online.
@@ -35,5 +35,14 @@ This course aims to helps us:
   - Determine the scope of the attack.
   - Contain the threat and remediate the infected host.
   - Minimize the risk of re-infection.
+ 
+ #### Goal of a SOC
+ Why would a corporation consider employing a SOC?
+ - The ultimate goal of any organization using a SOC is to maintain business integrity and continuity. Revenue loss due to downtime is costly and credibility loss due to a breach can be even worse for the company.
+WHat are the strategies that a SOC uses so that an organization can reach these goals?
+- First, the SOC team will develop a proactive strategy to reduce the time necessary to respond to a threat. The more they know about their networks, the easier it will be to identify potential attacks. THis knowledge will be gained through integration with activities like **asset inventorying, continuouse security monitoring, vulnerability scanning, penetration testing, and treat hunting.**
+- Next, the SOC will work to minimize a breach's impact when one does occur. This is done by reducing the time it takes to detect a breach by prioritizing its activities based on current industry threats and the aid of threat intelligence.
+  
+    
 
 
