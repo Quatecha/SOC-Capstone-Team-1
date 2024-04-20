@@ -39,10 +39,16 @@ This course aims to helps us:
  #### Goal of a SOC
  Why would a corporation consider employing a SOC?
  - The ultimate goal of any organization using a SOC is to maintain business integrity and continuity. Revenue loss due to downtime is costly and credibility loss due to a breach can be even worse for the company.
-WHat are the strategies that a SOC uses so that an organization can reach these goals?
-- First, the SOC team will develop a proactive strategy to reduce the time necessary to respond to a threat. The more they know about their networks, the easier it will be to identify potential attacks. THis knowledge will be gained through integration with activities like **asset inventorying, continuouse security monitoring, vulnerability scanning, penetration testing, and treat hunting.**
+What are the strategies that a SOC uses so that an organization can reach these goals?
+- First, the SOC team will develop a proactive strategy to reduce the time necessary to respond to a threat. The more they know about their networks, the easier it will be to identify potential attacks. This knowledge will be gained through integration with activities like **asset inventorying, continuouse security monitoring, vulnerability scanning, penetration testing, and treat hunting.**
 - Next, the SOC will work to minimize a breach's impact when one does occur. This is done by reducing the time it takes to detect a breach by prioritizing its activities based on current industry threats and the aid of threat intelligence.
   
-    
+#### Challenges of a SOC
+- **Governance and Compliance:**
+- **Information Technology:** IT infrastructures are becoming more complex and interdependent with multiple on-premises and Cloud-based components. This makes it increasingly difficult for the SOC analyst to process and make sense of the different data sources. With the increasing number of devices, more events are generated, which inevitably results in more false-positive alerts.
+- **People:** The most important resources that the SOC possesses are its people. The human resource challenges facing the SOC personnel are multifaceted and include the following
+  - **SOC Analyst Burnout:** there's a vast number of alerts entering into the SOC constantly. It is a very monotonous task but associated with a high responsibility, and any incorrect decision can lead to serious consequences. A combination of time, pressure, and the monotonous nature of their work can often lead to burnout.
+  - **Lack of skilled staff:** Lack of skilled staff and difficult retention. Due to the issues just described, it is difficult for companies to retain skilled staff for their SOC. Companies must spend resources on maintaining the skill level of their current staff or spend additional resources on training new staff members.
+  - **Lack of effective communications:**
 
 
