@@ -43,9 +43,14 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 - https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit
 - https://docs.google.com/document/d/1ri4l8PPLV0UcBY9brIH37BRxOGFAiPArHI49kHkJD4o/edit?usp=sharing
 - - **Tools Being Used**
-  - wireshark
-  - wazuh
-  - splunk
+  - Wireshark
+  - Wazuh
+  - Snort
+  - pfSense
+  - AWS
+    - EC2
+    - IAM
+    - VPC
   - GitHub Projects
 ##
 - **Sprint 1-2 Team Retrospective**
