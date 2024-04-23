@@ -28,7 +28,7 @@ This course aims to helps us:
 - Ransomeware attacks are often intiated via a phishing attack.
   - I.e. A link to a malicious website is included in an email. The bad actors will attempt to encrypt the hard drives of the targets computers rendering them unusable and the more sophisticated attackers will exfiltrate sensitive corporate data and threaten to publish the data is a ransom is not met.
     
-![Attack Continuum](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/J_A_jODNRSywP4zgzTUsZw_7bb2d61f4e2143ad82b5448a21eba6f1_IINS_30_ProtectingNetworkwithFirePOWER_001.png?expiry=1713744000000&hmac=BE4uUeDLZT86jC0oUdG3Q12PISAeB6H7yFMFLlPsjRs)
+![Attack Continuum](/assets/Attack-Continuum.png)
 - Before attacks occur, in-depth analysis of network traffic has been performed to establish a baseline of normal behavior. Policies and controls can then be implemented to properly defend the environment. During an attack, it is critical to detect the presence of malware and block identified threats continuously.
 - After an attack, take the following actions:
   - Marginalize the impact of an attack by identifying the point of entry.
