@@ -51,4 +51,60 @@ What are the strategies that a SOC uses so that an organization can reach these 
   - **Lack of skilled staff:** Lack of skilled staff and difficult retention. Due to the issues just described, it is difficult for companies to retain skilled staff for their SOC. Companies must spend resources on maintaining the skill level of their current staff or spend additional resources on training new staff members.
   - **Lack of effective communications:**
 
+##
 
+### Week 2
+#### SOC Interaction with Other Departments
+- SOCs require effective tools, experienced SOC analysts with comprehensive technical backgrounds, and strong relationships with internal and external organizations. Building strong, positive relationships with important business stakeholders is direct and concise communication. The security analyst must identify important resources from IT, networking, and software or database departments when an incident occurs.
+
+#### Common SOC Services
+- A SOC offers services that begin before incidents occur and continue to function until after the incidents are resolved. Here you will learn about the various services that a SOC provides throughout the incident response phases. In the following video, you will learn several key functions the SOC provides at these steps, and you will learn the other departments within the organization that the SOC interacts with to perform incident response.
+
+- One of the main responsibilities of a SOC is to find and respond to security incidents. Incidents are alerts or events that could pose a serious threat to the organization and should be escalated to the incident response team.
+
+- Alerts can come from several places and systems, such as the following:
+  - *Users*
+  - *Helpdesk*
+  - *Hardware*
+  - *Software*
+    
+The **SANS (SysAdmin, Audit, Network, and Security) Institute** is the world’s largest provider of security training and certification. SANS defines a six-step plan for incident response and is widely used in the cybersecurity industry for cybersecurity incident response procedures.
+
+- The six steps of the *SANS* incident response plan are the following:
+  - **Preparation:** The organization’s security policy is defined. A risk assessment is performed to identify all sensitive assets, and a strategy is then defined to prioritize security incidents based on the risk assessment. Finally, a Computer Incident Response Team (CSIRT) will be established, which is the group that works in responding to computer security incidents.
+  - **Identification:** Possible security incidents are identified in this phase. Additional evidence is collected to document the type and severity of each incident’s occurrence.
+  - **Containment:** This phase ensures that a confirmed incident does not spread or cause more damage, and that the attacker is unable to access any additional resources.
+  - **Eradication:** In this phase, all unauthorized information is completely removed from systems. An example is “bot” software that was used to communicate with a command-and-control server on the internet. If not removed, it could remain latent for a large period and therefore go undetected, only to initiate communication at a later date.
+  - **Recovery:** After the incident has been isolated and eradicated, the affected systems are restored to their “normal” state, or as close as possible to this state.
+  - **Lessons learned:** In the last phase, determination of the cause of the incident is the focal point. A plan is developed for preventing future occurrences proactively.
+ 
+## 
+
+### Week 3
+#### SOC Types and Staffing Considerations
+
+**Threat-centric SOC**
+- *A threat-centric SOC* proactively hunts for malicious threats on networks. New threats can be discovered through recently identified vulnerabilities, threat intelligence gathering services, and reported observations detailing malicious anomalies across targeted industry segments.
+
+- Detecting attacks and incidents is a challenging task, even for highly trained security personnel. To deal with today's greatest security challenges, organizations need a simpler, scalable, threat-centric approach that addresses security across the entire attack continuum— *before, during, and after an attack.* 
+
+- *Before an attack*, comprehensive contextual awareness and in-depth analysis of the network traffic are needed to implement policies and controls that properly defend the environment.
+
+- *During an attack*, it is critical to have the ability to continuously detect the presence of malware and block identified threats.
+
+- *After an attack*, the following actions should be taken:
+
+  - Marginalize the impact of an attack by identifying the point of entry.
+  - Determine the scope of the attack.
+  - Contain the threat and remediate the infected host.
+  - Minimize the risk of reinfection.
+
+**Compliance-Based SOC**
+  - A compliance-based SOC is focused on comparing the compliance posture of network systems to reference configuration templates and standard system builds. This type of monitoring detects unauthorized changes and existing configuration problems that may lead to a security breach. Typically, such issues cannot be identified by common security tools, such as vulnerability scanners, unless the configuration problem is actively exploited. The best time to identify potential security issues within the network is certainly not during an exploit.
+
+- Linking the risk management and incident response practices of an organization to an automated system compliance process is key to a successful compliance-based SOC. There could be circumstances in which an industry requirement mandates standards-based security practices, such as continuously evaluating against benchmarks established by the Center of Internet Security (CIS) or meeting PCI DSS 2.0 compliance.
+
+**Operational-Based SOC**
+- An *operational-based SOC* is an internally focused organization that is tasked with monitoring the security posture of an organization’s internal network. **Tiers 2 and 3 analysts** that work in these SOCs research, develop, and operationalize complex detection techniques that are tailored for an organization's specific network environment. **Tier 2 analysts** may develop highly customized regular expression (REGEX)-based search strings. **Tier 1 SOC analysts** are commonly tasked with deploying these customized REGEX-based expressions into the organization’s *security information and event management (SIEM)* analytic solution. An operational-based SOC is focused on maintaining the operational integrity of the identity management and access policies, intrusion detection system rules, and the administration of firewall *access control list (ACL)* rules. The *Computer Security Incident Response Team (CSIRT)* is the most technically accurate term that describes an operational-based SOC.
+
+- A typical reaction when looking for a solution to a security problem is to enable or configure multiple security-based features on a network security device. However, it is important to understand that operational-based security issues cannot be fully addressed by haphazardly enabling random security features on a device. The inherent risk is that the individual who is implementing these security features may inadvertently misconfigure the device, which can remove features that are meant to protect the organization. Addressing operational issues within an organization requires operational solutions and operational competence.
