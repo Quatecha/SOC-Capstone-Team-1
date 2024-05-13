@@ -7,6 +7,7 @@ In this guide, you'll be creating users and roles with *Principle of Least Privi
 
 
 ## Users
+
 **AWS Console Home Page**<br>
 In the Search bar, type `IAM`.<br>
 Click on the **IAM** service.
@@ -47,31 +48,161 @@ This page gives you post-creation option to directly send the user credentials t
 
 If the password was auto-generated, you'll need to view it before navigating away from this page.<br>
 Copy/paste the password, and send it over an encrypted channel.<br>
-IMPORTANT: do not send passwords over e-mail, as it's insecure and can be intercepted during transit. It can also violate compliance requirements imposed by regulating bodies such as GDPR or HIPAA.
+If you forget to, the password can be reset from the user's page:<br>
+Users  ->  Security credentials  ->  Manage console access
+
+
+### Setting up user's MFA and credentials permissions
+**IAM Users** page<br>
+Click on the newly created user.
+
+Permissions  ->  click **Add permissions**  ->  click **Create inline policy**
+
+Now attach the policy to the user<br>
+
+**Specify Permissions** page<br>
+Click on the JSON button.<br>
+<!-- img goes here -->
+Delete the empty statement in the JSON editor, then Copy/paste the following policy into it:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowViewAccountInfo",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetAccountPasswordPolicy",
+                "iam:ListVirtualMFADevices"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowManageOwnPasswords",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ChangePassword",
+                "iam:GetUser"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowManageOwnAccessKeys",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateAccessKey",
+                "iam:DeleteAccessKey",
+                "iam:ListAccessKeys",
+                "iam:UpdateAccessKey",
+                "iam:GetAccessKeyLastUsed"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowManageOwnSigningCertificates",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteSigningCertificate",
+                "iam:ListSigningCertificates",
+                "iam:UpdateSigningCertificate",
+                "iam:UploadSigningCertificate"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowManageOwnSSHPublicKeys",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteSSHPublicKey",
+                "iam:GetSSHPublicKey",
+                "iam:ListSSHPublicKeys",
+                "iam:UpdateSSHPublicKey",
+                "iam:UploadSSHPublicKey"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowManageOwnGitCredentials",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateServiceSpecificCredential",
+                "iam:DeleteServiceSpecificCredential",
+                "iam:ListServiceSpecificCredentials",
+                "iam:ResetServiceSpecificCredential",
+                "iam:UpdateServiceSpecificCredential"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowManageOwnVirtualMFADevice",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateVirtualMFADevice"
+            ],
+            "Resource": "arn:aws:iam::*:mfa/*"
+        },
+        {
+            "Sid": "AllowManageOwnUserMFA",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeactivateMFADevice",
+                "iam:EnableMFADevice",
+                "iam:ListMFADevices",
+                "iam:ResyncMFADevice"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "DenyAllExceptListedIfNoMFA",
+            "Effect": "Deny",
+            "NotAction": [
+                "iam:CreateVirtualMFADevice",
+                "iam:EnableMFADevice",
+                "iam:GetUser",
+                "iam:GetMFADevice",
+                "iam:ListMFADevices",
+                "iam:ListVirtualMFADevices",
+                "iam:ResyncMFADevice",
+                "sts:GetSessionToken",
+                "iam:ChangePassword",
+                "iam:GetUser"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            }
+        }
+    ]
+}
+```
 
 
 
-### Set up MFA
-
-### Test that the user can log in
-Navigate to the **Roles** page.<br>
-Click on the desired role from the list.<br>
-In the **Summary** section, you'll find the link to switch roles. Click on the _copy_ icon.<br>
-Open a new tab in your browser, and paste the copied link<br>
-You should be directed a **Switch Role** page. The fields are automatically populated.<br>
-Click **Switch Role**
-
-Follow the same steps for the other 3 roles.
+NOTE: You would get an error if you tried to sign in with the policy provided in the official AWS documentation. This is because you didn't remove the restriction of changing your password due to the MFA requirement. with the `FORCE_MFA` policy attached, you've added the following clauses to the "Deny" statement's "NotAction" property: "iam:ChangePassword" and "iam:GetUser".
 
 
+### User Login
+
+The user can now log in.<br>
+The user now needs to add the MFA device before they're allowed to do anything else.<br>
+They can do this by navigating to:<br>
+IAM Dashboard  ->  click **Add MFA**<br>
+**MFA device name**:  `<enter_device_name>`<br>
+**MFA device**: `Authenticator app`<br>
+Click **Next**
+
+**Set up device** page<br>
+The user can now either scan the code, or use the secret key, in their authenticator application.<br>
+They can now enter two consecutive codes. They might have to wait for a refresh for the second code.<br>
+Click **Add MFA**
+
+Congrats! The user is now set up.
 
 
 
-
-
-
-
-
+<!-- ----------------------------------------------- -->
 
 ## Roles
 **AWS Console Home Page**<br>
@@ -142,3 +273,19 @@ You should be directed a **Switch Role** page. The fields are automatically popu
 Click **Switch Role**
 
 Follow the same steps for the other 3 roles.
+
+
+
+
+ToDo
+create new test_user, attach FORCE_MFA policy, then sign in as user and test the setup.
+Then quickly repeat with new test_user and document steps. Easy!
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------- -->
