@@ -5,16 +5,20 @@ IAM is the AWS core infrastructure service which is used to provide users or app
 In this guide, you'll be creating users and roles with *Principle of Least Privilege* in mind.
 
 
-
 ## Users
 
 **AWS Console Home Page**<br>
 In the Search bar, type `IAM`.<br>
+![search-service-screenshot](./assets/search-service.png)
+
 Click on the **IAM** service.
+<choose-IAM-service>
 
 ### Creating the user
 From the IAM Dashboard side panel:<br>
+<IAM-sidebar>
 Click on **Users**<br>
+
 Click on **Create user**<br>
 
 **Specify User Details** page<br>
@@ -198,7 +202,7 @@ The user can now either scan the code, or use the secret key, in their authentic
 They can now enter two consecutive codes. They might have to wait for a refresh for the second code.<br>
 Click **Add MFA**
 
-Congrats! The user is now set up.
+Congrats! The user is now set up with MFA.
 
 
 
@@ -241,16 +245,19 @@ VPC and Security Group Management: SOC administrators may require permissions to
 From the IAM Dashboard side panel:<br>
 Click on **Roles**<br>
 Click on **Create role**<br>
+<create-role>
 Trusted entity type: **AWS account**<br>
+<trusted-entity-type>
 An AWS account:  **This account**  |  **Require MFA**
+<an-AWS-account>
 * This specifies that the role can only be assumed by IAM users of this account.
 * It requires MFA for additional security.
 Click **Next**
 
-
 **Add Permissions** page<br>
 You can add whichever AWS managed permissions you want to attach to the role.<br>
 You'll be typing which AWS managed policies you'd like to add to the current role.<br>
+<add-permissions>
 Here are the AWS Managed Policies that each role should have:
 * SOC Analyst:  AmazonEC2ReadOnlyAccess, CloudWatchReadOnlyAccess
 * SOC Engineer:  SecurityAudit
@@ -261,30 +268,21 @@ Here are the AWS Managed Policies that each role should have:
 **Name, review, and create** page<br>
 **Role Details**<br>
 Role name:  **SOC_Analyst**  |  **SOC_Engineer**  |  **SOC_Manager**  |  **SOC_Administrator**<br>
+<role-details>
 Select trusted entities:  here you can edit the policy to allow the user to assume the role.<br>
+<select-role>
 Click **Create Role**
 
 ### Test that the user can switch to the role in the AWS console
 Navigate to the **Roles** page.<br>
 Click on the desired role from the list.<br>
 In the **Summary** section, you'll find the link to switch roles. Click on the _copy_ icon.<br>
-Open a new tab in your browser, and paste the copied link<br>
+Open a new tab in your browser, and paste the copied link.<br>
 You should be directed a **Switch Role** page. The fields are automatically populated.<br>
+<switch-roles-page>
 Click **Switch Role**
 
 Follow the same steps for the other 3 roles.
-
-
-
-
-ToDo
-create new test_user, attach FORCE_MFA policy, then sign in as user and test the setup.
-Then quickly repeat with new test_user and document steps. Easy!
-
-
-
-
-
 
 
 
