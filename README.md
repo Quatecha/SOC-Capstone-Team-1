@@ -63,4 +63,8 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 - **Sprint 2: Secure Cloud Infrastructure & Access Control:**
 - https://docs.google.com/document/d/1IZpg-4bLl94O2m6R04q3y4Obew1XGjvGLFphgxRXlto/edit
 
-  
+
+<br>
+
+# Documentation
+[IAM](IAM.md)
