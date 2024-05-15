@@ -13,8 +13,7 @@ Group Capstone project repository for Security Operations Center (SOC) implement
 
      • Ivan Castillo: Technical Documentation 
 
-     • Justin Vargas: APA 1750 Professional Paper of Project Build
-
+     
 
   
 ##
