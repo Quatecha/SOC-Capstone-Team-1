@@ -1,4 +1,4 @@
-#<h1 align="center"> SOC-Capstone-Packet Patrol
+#<h1 align="center"> Blue Team SOC-Capstone-Packet Patrol
 Group Capstone project repository for Security Operations Center (SOC) implementation.
 ##
 **[Project Requirements](https://docs.google.com/document/d/1EZNmVznhNWx1f6MrD1Wel16jqEMmvVfN-b0MNJu0puU/edit)**
