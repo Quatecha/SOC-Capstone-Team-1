@@ -32,19 +32,18 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 #
 
 - **Resources:**
-  - https://www.youtube.com/watch?v=RjLM50USrvY
-  - https://www.coursera.org/learn/security-operations-center-soc
-  - https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_SEC_NextGenSIEM_Whitepaper_Final.pdf?aliId=eyJpIjoiZGJ5SWlNMDVEeUpWU1RVUyIsInQiOiJXRHNUUDFpWklvZVBySHZcLzFzdm9Gdz09In0%253D
-  - https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/control-access-to-platform
-  - https://www.splunk.com/en_us/blog/learn/soc-security-operation-center.html
-  - https://infosecwriteups.com/building-a-virtual-security-home-lab-part-1-network-topology-a373f93e342b
-  - https://cybernoweducation.medium.com/what-is-the-soc-analyst-method-e1ab043d96d3
+  - [Cloud Security Architecture An Introduction (2024) Full course](https://www.youtube.com/watch?v=RjLM50USrvY)
+  - [Security Operations Center (SOC) Coursera](https://www.coursera.org/learn/security-operations-center-soc)
+  - [Learn how to Streamline and Enrich your SOC Workflow with Modern SIEM](https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_SEC_NextGenSIEM_Whitepaper_Final.pdf?aliId=eyJpIjoiZGJ5SWlNMDVEeUpWU1RVUyIsInQiOiJXRHNUUDFpWklvZVBySHZcLzFzdm9Gdz09In0%253D)
+  - [Control access to platform using SOC roles, environments, and permission groups](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/control-access-to-platform)
+  - [SOCs: Security Operation Centers Explained](https://www.splunk.com/en_us/blog/learn/soc-security-operation-center.html)
+  - [Building a Virtual Security Home Lab: Part 1 - Network Topology](https://infosecwriteups.com/building-a-virtual-security-home-lab-part-1-network-topology-a373f93e342b)
+  - [The Five Step SOC Analyst Method](https://cybernoweducation.medium.com/what-is-the-soc-analyst-method-e1ab043d96d3)
 ##
 
 ##
-- **Sprint 1: Project Planning & Requirements Gathering:**
-- https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit
-- https://docs.google.com/document/d/1ri4l8PPLV0UcBY9brIH37BRxOGFAiPArHI49kHkJD4o/edit?usp=sharing
+- [**Sprint 1: Project Planning & Requirements Gathering:**](https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit)
+- [Github Projects for team Collaboration](https://docs.google.com/document/d/1ri4l8PPLV0UcBY9brIH37BRxOGFAiPArHI49kHkJD4o/edit?usp=sharing)
 - - **Tools Being Used**
   - Wireshark
   - Wazuh
@@ -59,8 +58,7 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 - **Sprint 1-2 Team Retrospective**
 
 #
-- **Sprint 2: Secure Cloud Infrastructure & Access Control:**
-- https://docs.google.com/document/d/1IZpg-4bLl94O2m6R04q3y4Obew1XGjvGLFphgxRXlto/edit
+- [**Sprint 2: Secure Cloud Infrastructure & Access Control:**](https://docs.google.com/document/d/1IZpg-4bLl94O2m6R04q3y4Obew1XGjvGLFphgxRXlto/edit)
 
 
 <br>
