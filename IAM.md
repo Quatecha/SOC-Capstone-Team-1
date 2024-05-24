@@ -224,7 +224,7 @@ Click on the **IAM** service.
 ### What are the roles?
 For this SOC environment, you'll be creating four new roles, with the following permissions:
 
-* SOC Analyst:  AmazonEC2ReadOnlyAccess, AmazonVPCReadOnlyAccess, IAMReadOnlyAccess, CloudWatchReadOnlyAccess<br>
+* SOC Analyst:  AmazonEC2ReadOnlyAccess, AmazonVPCReadOnlyAccess, IAMReadOnlyAccess, CloudWatchReadOnlyAccess, <br>
 Grants read-only access to AWS services and resources, allowing SOC analysts to view configurations, logs, and other information for monitoring and analysis purposes without the ability to modify resources. This policy should include permissions to list EC2 instances, VPC configurations, IAM users, and CloudTrail logs.
 
 Access to Monitoring and Alerting Tools: Grant permissions to access monitoring and alerting tools such as CloudWatch, GuardDuty, and CloudTrail. This includes the ability to view metrics, set up alarms, and access log data for security monitoring and incident detection purposes.<br>
@@ -324,7 +324,7 @@ Click on the users that should have this group's permissions.<br>
 Select the policies that will give this group required permissions.<br>
 Type them into the search bar for quick visibility.<br>
 For `SOC_Admins`, this will be:<br>
-AmazonVPCFullAccess, AmazonEC2FullAccess, AmazonS3ReadOnlyAccess, CloudWatchFullAccessV2, IAMReadOnlyAccess, AWSArtifactReportsReadOnlyAccess<br>
+AmazonVPCFullAccess, AmazonEC2FullAccess, AmazonS3ReadOnlyAccess, CloudWatchFullAccessV2, AWSCloudTrail_FullAccess, IAMReadOnlyAccess, AWSArtifactReportsReadOnlyAccess<br>
 ![attach-group-policies-screenshot](./assets/IAM-screenshots/attach-group-policies.png)
 
 Click **Create user group**
@@ -332,3 +332,4 @@ Click **Create user group**
 Users selected for the `SOC_Admins` policy will have 
 
 Congrats! You've just created the User Group `SOC_Admins`.
+

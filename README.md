@@ -65,3 +65,5 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 
 # Documentation
 [IAM](IAM.md)
+[Billing and Cost Management](Billing-Cost-Management.md)
+[CloudTrail](CloudTrail.md)
