@@ -21,7 +21,7 @@ Keep the default SSH rule with the source listed as  `0.0.0.0/0`  which means fr
 
 Launch the instance.<br>
 You’ll be directed to the EC2 Instances page.
-
+<ec2-creation>
 
 ### Configure Security Group rules
 The  **Security Group**  acts as the virtual firewall at the EC2 instance level.<br>
