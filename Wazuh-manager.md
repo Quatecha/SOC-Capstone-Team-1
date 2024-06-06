@@ -175,12 +175,14 @@ The credentials for remote browser access to Wazuh dashboard is at the top of th
 
 **Wazuh Dashboard web interface:**  _https://<wazuh_dashboard_ip>:443_<br>
 **User:**  _admin_<br>
-**Password:**  _<randomly_generated_password>_
+**Password:**  _\<randomly_generated_password\>_
 
 Before you try to access it, you’ll need to allow the EC2 instance to accept HTTPS traffic.<br>
+But first, get your host machine's public IP address by googling `What is my IP?`
+
 WAZUH-security-group  ->  Inbound rules  ->  Edit inbound rules<br>
 **Type:**  _HTTPS_<br>
-**Source:**  _My IP_<br>
+**Source:**  _<your_ip>_<br>
 **Description:**  _For Wazuh Dashboard_
 
 You can now access Wazuh Dashboard from your host machine’s browser.<br>
