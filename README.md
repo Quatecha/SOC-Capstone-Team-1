@@ -64,18 +64,19 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 <br>
 
 # Documentation
-[IAM](IAM.md)
-[Billing and Cost Management](Billing-Cost-Management.md)
-[CloudTrail](CloudTrail.md)
+[IAM](IAM.md)<br>
+[Billing and Cost Management](Billing-Cost-Management.md)<br>
+[Kali](Kali.md)<br>
+[Metasploit](Metasploit.md)<br>
+[Wazuh Manager](Wazuh-manager.md)<br>
 
 
 
 
+# NOTES
+While following this guide, you’ll want to change the fake IPv4 IP address `203.0.113.5` to the stated public or private IP for your instance. This is a fake IP address reserved for demonstration purposes.
 
-
-NOTE: While following this guide, you’ll want to change the fake IPv4 IP address ‘203.0.113.5’ to the stated public or private IP for your instance. This is a fake IP address reserved for demonstration purposes.
-
-The commands/output/code provided in this documentation is often preceded by a $.
-This is meant to mimic a marker for terminal prompt.
-When copy/pasting these commands, do not include the $.
+The commands/output/code provided in this documentation is often preceded by a `$`.<br>
+This is meant to mimic a marker for terminal prompt.<br>
+When copy/pasting these commands, do not include the `$`.<br>
 Including it will probably throw an error.
