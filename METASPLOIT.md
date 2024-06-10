@@ -1,5 +1,6 @@
 # Metasploit
 
+
 ### Create Ubuntu instance
 Create an EC2 instance with the **Quick Start Ubuntu AMI**.
 
@@ -20,7 +21,7 @@ Create a new Subnet for the instance. This will be your vulnerable subnet. So go
 **Auto-assign public IP**:  `Enable`
 
 ### Security Group name:
-**Kali Linux-Kali Linux 2023.4-AutogenByAWSMP--2**
+**Metasploit-security-group**
 
 ### Inbound  Security Group Rules
 **Type**:  `ssh`<br>
@@ -77,7 +78,34 @@ $  sudo apt upgrade
 ```
 ...to update the debian dependencies.
 
+
 ## Install Metasploit
+
+The command to download and install Metasploit:
+```
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
+```
+
+Check for the new Metasploit file:<br>
+`ls`
+
+You should now see an `msfinstall` file.<br>
+Check proper installation by executing the console for the Metasploit Framework:<br>
+`msfconsole`
+
+Congrats! You’ve just run Metasploit!!
+
+To exit the console, type:<br>
+`exit`
+
+
+
+
+
+<!-- Old Method to install Metasploit. Deprecated.
+
 Now install some initial dependencies:<br>
 `$  sudo apt install ruby ruby-dev build-essential zlib1g zlib1g-dev libpq-dev libpcap-dev libsqlite3-dev`
 
@@ -97,8 +125,4 @@ Finish installing the rest of the packages for Metasploit that are Ruby dependen
 $  sudo bundle install
 $  ls
 ```
-You should now see an abundant list of directories and files.<br>
-Check proper installation by executing the console for the Metasploit Framework:<br>
-`$  ./msfconsole`
-
-Congrats! You’ve just run Metasploit!!
+-->
