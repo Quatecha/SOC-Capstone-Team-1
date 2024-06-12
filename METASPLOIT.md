@@ -97,9 +97,8 @@ Check proper installation by executing the console for the Metasploit Framework:
 
 Congrats! You’ve just run Metasploit!!
 
-To exit the console, type:<br>
+To exit the Metasploit console, type:<br>
 `exit`
-
 
 
 

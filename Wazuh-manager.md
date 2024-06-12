@@ -196,6 +196,9 @@ Congrats! You’ve just accessed the Wazuh Dashboard being hosted on your EC2 in
 
 You can now begin deploying agents.
 
+If your configurations are correc† for both instances, and there are no security settings blocking the needed ports, the Wazuh Manager will automatically pick up the Wazuh Agent!
+
+![Wazuh-dashboard-agent-installed-screenshot](./assets/Wazuh-manager-screenshots/Wazuh-dashboard-agent-installed.png)
 
 ## Configuration files
 Access the Wazuh configuration file at:<br>
@@ -206,3 +209,5 @@ Access the Filebeat configuration file at:<br>
 
 Access the Wazuh passwords file at:<br>
 `$  sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt`
+
+
