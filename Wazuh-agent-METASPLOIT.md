@@ -46,12 +46,12 @@ NOTE: if you see a message like so after running `apt-get update`, you might hav
 
 ## Deploy the Wazuh agent
 Use the AWS Console to navigate to your EC2 WAZUH-manager instance Details page.<br>
-Copy the  Private IPv4 address  to your clipboard.<br>
+Copy the  Public IPv4 address  to your clipboard.<br>
 
-NOTE: Be sure to edit the WAZUH_MANAGER variable to contain your WAZUH-manager’s private IP that you just copied!<br>
-`$  WAZUH_MANAGER=“<WAZUH-manager private IP>“ apt-get install wazuh-agent`
+NOTE: Be sure to edit the WAZUH_MANAGER variable to contain your WAZUH-manager’s public IP that you just copied!<br>
+`$  WAZUH_MANAGER=“<WAZUH-manager public IP>“ apt-get install wazuh-agent`
 
-* `WAZUH_MANAGER=“<WAZUH-manager private IP>“`  -  this command sets the WAZUH_MANAGER environment variable to the manager’s IP address. This variable is used by the Wazuh agent to determine the Wazuh manager’s IP address or hostname. It can then send data to the manager using this variable. If the IP address or hostname of your manager ever changes, be certain to update it in the monitored endpoint’s environment variables as well.<br>
+* `WAZUH_MANAGER=“<WAZUH-manager public IP>“`  -  this command sets the WAZUH_MANAGER environment variable to the manager’s IP address. This variable is used by the Wazuh agent to determine the Wazuh manager’s IP address or hostname. It can then send data to the manager using this variable. If the IP address or hostname of your manager ever changes, be certain to update it in the monitored endpoint’s environment variables as well.<br>
     * **Environment Variables**  are part of the environment in which processes run. These processes might be reliant upon these variables, so they access the variable when needed. These variables are commonly used to store configuration settings, system information, or paths to executables or libraries. It can be persistent or temporary. In this case, the Wazuh framework only uses it temporarily to define the manager’s IP address during installation, so that the Wazuh agent can communicate with the Wazuh server. 
     * If the manager weren’t on the same network, you might have to enter it’s public IP address instead. AWS might change the public IP address every time the instance is stopped and started again. If this is the case, you might be better off purchasing a dedicated address for your Wazuh endpoint instances.
 * `apt-get  install  wazuh-agent`  -  this command installs the Wazuh agent package  `wazuh-agent`  on this endpoint. 
@@ -66,7 +66,7 @@ You can use the following command to check that `wazuh-agent` has been installed
 Check that the Wazuh Manager's IP address has been added correctly in the following file with:<br>
 `sudo nano /var/ossec/etc/ossec.conf`
 
-You should notice the Wazuh Manager private IP address within the `<ossec-config>`  ->  `<client>`  ->  `<server>`  tags:
+You should notice the Wazuh Manager public IP address within the `<ossec-config>`  ->  `<client>`  ->  `<server>`  tags:
 
 <ossec-config>
 
@@ -109,6 +109,33 @@ You can access the Wazuh configuration file at:<br>
 
 
 
+
+# Connecting Wazuh Agent to Manager upon turning on
+Start instances
+1. Navigate to EC2 Dashboard. 
+2. Check the box for Wazuh-Manager and Metasploit-Ubuntu instances.
+3. Click the `Start instance` button. 
+<start-instances>
+
+Update Manager firewall rules
+Each instance will now have a new public IP address which your firewalls will be blocking. Update the rules.
+1. Navigate to the Metasploit-Ubuntu EC2 instance page. 
+2. Copy the `Public IPv4 address` to your clipboard.
+<copy-Metasploit-IP>
+1. Navigate to Wazuh-Manager EC2 instance page.
+2. Click on the `Security` tab.
+3. Click on the `Wazuh-Manager-security-group` link.
+<Wazuh-Manager-security-groups>
+4. Click on the `Edit inbound rules` button.
+<manager-edit-inbound-rules>
+5. Paste the Metasploit-Ubuntu public IP address into the `1514` and `1515` rules. Remember that it needs the subnet’s CIDR.
+<manager-rules-1514>
+<manager-rules-1515>
+6. Click the `Save rules` button.
+
+
+
+
 # Troubleshooting
 
 ## 1. GPG key duplication
@@ -124,4 +151,4 @@ If you accidentally duplicated the GPG key earlier, for example, you can simply 
 ## 2. Wazuh Agent not connecting
 * This might be due to a network security mechanism blocking a port. Check this EC2 instance's Security Group rules. It should have the Wazuh Manager's public IP address listed as source for ports 1514 and 1515. Also, the Wazuh manager's Security Group should allow for the Wazuh agent's public IP on ports 1514 and 1515.
 
-* Otherwise, the Wazuh manager might not be listed in the Wazuh agent's configuration files. You can resolve this by accessing the config file with `sudo nano /var/ossec/etc/ossec.conf`. Be sure that the agent's public IP address is listed within the `<address>` tag, with no quotes.
+* Otherwise, the Wazuh manager might not be listed in the Wazuh agent's configuration files. You can resolve this by accessing the config file with `sudo nano /var/ossec/etc/ossec.conf`. Be sure that the instead of the agent's private IP address, that the _public IP_ is listed within the `<address>` tag, with no quotes.
