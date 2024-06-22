@@ -65,6 +65,7 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 # Documentation
 [IAM](IAM.md)<br>
 [Billing and Cost Management](Billing-Cost-Management.md)<br>
+[EBS](EBS.md)<br>
 [Kali](Kali.md)<br>
 [Metasploit](Metasploit.md)<br>
 [Wazuh Manager](Wazuh-manager.md)<br>
