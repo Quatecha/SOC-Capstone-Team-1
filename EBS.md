@@ -8,7 +8,7 @@ Amazon EBS (Elastic Block Store) is a scalable, high-performance block-storage s
 EBS' elastic volumes feature allows you to increase volume size while the volume is still in use, making the resizing process easier and faster. It also provides the option to completely change the volume type and adjust its performance - also without downtime.
 
 
-# Show EBS Volume
+## Show EBS Volume
 In an Amazon-Linux system, you can read some information on the EBS volume with the following command:<br>
 `sudo gdisk -l /dev/xvda`
 
@@ -20,7 +20,7 @@ In Linux systems, you can use the following command to display disk usage on the
 ![show-storage-drives](./assets/EBS-screenshots/show-storage-drives.png)
 
 
-# Create volume snapshot
+## Create volume snapshot
 It's recommended that you create a snapshot back-up before modifying the volume, in case you need to roll back changes.
 
 From the EC2 left-hand pane:<br>
@@ -39,9 +39,6 @@ Click `Create snapshot`.
 
 It will take some minutes for the volume to be created.<br> 
 You can check progress in the `Snapshot status` column.
-
-
-# Resize EBS volume with Elastic Volumes
 
 
 ## Modify volume
