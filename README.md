@@ -64,11 +64,19 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 
 # Documentation
 [IAM](IAM.md)<br>
+[VPC](VPC.md)
 [Billing and Cost Management](Billing-Cost-Management.md)<br>
+[CloudTrail](CloudTrail.md)<br>
 [EBS](EBS.md)<br>
+[S3](S3.md)<br>
 [Kali](Kali.md)<br>
 [Metasploit](Metasploit.md)<br>
 [Wazuh Manager](Wazuh-manager.md)<br>
+
+
+The following file is meant to assist in the maintenance and troubleshooting of the project's components:<br>
+[maintenance](maintenance.md)
+
 
 
 
