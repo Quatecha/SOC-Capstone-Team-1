@@ -1,6 +1,9 @@
 # Shuffle
 In this documentation, you'll be installing Shuffle on Red Hat Enterprise Linux (RHEL).
 
+NOTE: <br>
+This guide has stopped just short of the required Docker Compose installation, as some dependencies between required RHEL yum updates and required Docker Compose dependencies were conflicting. This prevented the completion of this guide before the installation of Shuffle. Do not follow this guide unless you'd like to ONLY install Docker Engine on a RHEL instance.
+
 
 
 ## Vocabulary
@@ -19,6 +22,7 @@ Complete the registration form and submit.<br>
 Account Type:  `Personal`
 
 Sign into the email account that you used in the RedHat registration. Open the recently sent e-mail, and click on the verification link to confirm and validate your new credentials. You will need these later.
+
 
 
 # Create Shuffle-RedHat instance on AWS
@@ -60,8 +64,8 @@ Enter the username and password you used to register on the Red Hat website.
 
 <subscription-manager>
 
-The output will display the user ID and the EC2 instance system name.
-
+The output will display the user ID and the EC2 instance system name.<br>
+Subscription Manager repositories is a collection of software packages that are specifically designed for subscribed RHEL systems.
 
 
 
@@ -77,7 +81,6 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker
 ```
 
 <install-docker-repo>
-
 
 
 
@@ -100,18 +103,26 @@ When prompted for the GPG key, confirm that it matches the following key:<br>
 <confirm-docker-GPG-key>
 
 
+## Start Docker
+Start with the following command:<br>
+`sudo systemctl start docker`
+
+Verify proper Docker installation by accessing an image on Docker Hub:<br>
+`sudo docker run hello-world`
+
+<start-docker>
 
 
+# Docker Compose
+This makes managing your applications that implement Docker a little easier. 
+You can just create one generic YAML file that will grab the specific containers and services that you need, and spin them up correctly so that they can communicate with each other.
+You will be spinning up a few different containers, and those containers are taking advantage of services from other containers.
+
+For example, the front-end and back-end will be taking advantage of an OpenSearch container that will be running the OpenSearch service within it. So it needs to be able to not only install OpenSearch and get that up and running, but it also needs to communicate with it.
 
 
+## Install Docker Compose
+IMPORTANT: 
+Because of compatibility issues with some package dependencies (i.e. Python version conflicts) between the RHEL main updates and required dependencies installed along with Docker Compose, this guide will end here. 
 
-
-
-
-
-<!-- 
-Left off at: 
-https://docs.docker.com/engine/install/rhel/#install-using-the-repository
-Install using the rpm repository
-2. Start Docker
--->
+In the future, I plan to continue this guide with a workaround after investigating which packages can be with-held during updates, so as to cause the least amount of conflicts and a working system.

@@ -31,7 +31,7 @@ Click **Create key pair** button.<br>
 This will create and download your key pair, which you’ll find in the **Downloads** folder by default if using Chrome browser.
 
 ### Network Settings
-**VPC:  Mr-Robot-VPC**<br>
+**VPC:  SOC-VPC**<br>
 **Subnet:  attack-subnet**<br>
 **Auto-assign public IP:  Enable**<br>
 
