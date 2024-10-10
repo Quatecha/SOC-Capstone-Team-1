@@ -42,9 +42,9 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 ##
 
 ##
-- [**Sprint 1: Project Planning & Requirements Gathering:**](https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit)
+[**Sprint 1: Project Planning & Requirements Gathering:**](https://docs.google.com/document/d/19wsBtw-bw78XlkGJ8Kh6ISsYmWZ57OPBM5P6TyHfUp4/edit)
 - [Github Projects for team Collaboration](https://docs.google.com/document/d/1ri4l8PPLV0UcBY9brIH37BRxOGFAiPArHI49kHkJD4o/edit?usp=sharing)
-- - **Tools Being Used**
+- **Tools Being Used**
   - Wireshark
   - Wazuh
   - Snort
@@ -55,12 +55,50 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
     - VPC
   - GitHub Projects
 ##
-- **Sprint 1-2 Team Retrospective**
 
 #
-- [**Sprint 2: Secure Cloud Infrastructure & Access Control:**](https://docs.google.com/document/d/1IZpg-4bLl94O2m6R04q3y4Obew1XGjvGLFphgxRXlto/edit)
+[**Sprint 2: Secure Cloud Infrastructure & Access Control:**](https://docs.google.com/document/d/1IZpg-4bLl94O2m6R04q3y4Obew1XGjvGLFphgxRXlto/edit)
+- **Tools Being Used**
+  - AWS Identity and Access Management IAM
+  - Multi-factor Authentication
+  - AWS Virtual Private Cloud VPC
+  - AWS Security Groups
+  - AWS NACLs
+  - AWS Route Tables
+  - AWS Cloudtrail
+## 
 
+#
+ [**Sprint 3: Data Collection & Aggregation:**](https://docs.google.com/document/d/1FfdHndfPya83mZ6Z1iIQR9gHgkQQS28gA9CioG3f_DQ/edit)
+- **Tools Being Used**
+  - AWS EC2 Instance
+  - Wazuh
+  - Metasploitable
+  - Putty
+##
 
+#
+ [**Sprint 4: Security & Alert Correlation:**](https://docs.google.com/document/d/1bEoA4FTASEn1FEr4lhsKIP055ClVs7AJno3N_jx78Bw/edit)
+ - **Tools Being Used**
+   - Security Orchestration Automation and Response tool SOAR
+   - Shuffle webhook
+   - Incindent Response Playbooks
+   - SIEM Solution
+   - Correlation Rules and Threat Detection
+   - Amazon S3 Bucket
+  ##
+
+  #
+  [**Sprint 5: Final Deliverables of Cloud-based Security Operations Center**](https://docs.google.com/document/d/1EL0rNWQW0_xBT_Yaeu61LvqEM1sErOSpcF9NzgBBZas/edit)
+  **Includes:**
+   -  Network Topology
+   - Secure Cloud Infrastructure & Access Control
+   - The Hive Installation
+   - Shuffle Installation
+   - 1750 word APA Paper
+      
+  ##
+  #
 
 # Documentation
 [IAM](IAM.md)<br>
