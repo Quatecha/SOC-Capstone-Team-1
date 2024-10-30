@@ -90,15 +90,19 @@ Welcome to the SOC-Capstone-Team1 GitHub repository! This project aims to design
 
   #
   [**Sprint 5: Final Deliverables of Cloud-based Security Operations Center**](https://docs.google.com/document/d/1EL0rNWQW0_xBT_Yaeu61LvqEM1sErOSpcF9NzgBBZas/edit)
+ 
   **Includes:**
    -  Network Topology
    - Secure Cloud Infrastructure & Access Control
    - The Hive Installation
    - Shuffle Installation
    - 1750 word APA Paper
-      
+
+      [Final Presentaion](https://docs.google.com/presentation/d/1g73UiHU3VxBxeiJnHe2SEyjlr1qi-78UUxWlCYtmHcc/edit#slide=id.g2e87be71e7e_0_0)
+     
   ##
   #
+
 
 # Documentation
 [IAM](IAM.md)<br>
